@@ -1,0 +1,11 @@
+
+##
+The task is to utilize the "math.js" module to perform mathematical computations. 
+In the "app.js" file, import the "add" and "mean" functions from "math.js" and use them to 
+determine the sum and mean of a given array of numbers. Display the results on console.
+
+Hint: Remember to export "add" and "mean" functions from "math.js".
+
+Expected Output: 
+The sum is 15
+The mean is 3
