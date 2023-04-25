@@ -1,0 +1,12 @@
+##
+Your task is to update the codebase that currently uses CommonJS module syntax for importing 
+and exporting. The codebase consits of two files, app.js and math.js. You are required 
+to modify both files to comply with the ES6 module syntax. This will involve changing the 
+file extension to ".mjs" wherever the ES6 syntax will be used. 
+
+Once the modifications are complete, you should be able to run the file and get 
+the expected output on the console.
+
+Expected Output:
+The sum is 15
+The mean is 3
