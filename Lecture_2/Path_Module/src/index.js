@@ -2,12 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const { getAbsolutePath } = require("./module");
 
-const path_to_file = path.join("src", "file.txt");
-
-const abs_path = getAbsolutePath(path_to_file);
-
-const data = fs.readFileSync(abs_path, "utf-8");
-console.log(data);
+module.exports = function () {
+  const path_to_file = path.join("src", "file.txt");
+  console.log(getAbsolutePath(path_to_file));
+};
 
 // Here's an explanation of how the code snippet works:
 

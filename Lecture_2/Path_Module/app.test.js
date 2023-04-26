@@ -1,21 +1,16 @@
 const path = require("path");
-const fs = require("fs");
+const app = require("./src/index");
 const { getAbsolutePath } = require("./src/module");
-
 const consoleSpy = jest.spyOn(console, "log");
 
 describe("Required data is logged in the console", () => {
   it("should log the correct message in the console", () => {
-    const pathToFile = path.join("src", "file.txt");
+    app();
+    const filePath = path.join("src", "file.txt");
 
-    const absPath = getAbsolutePath(pathToFile);
-
-    const data = fs.readFileSync(absPath, "utf-8");
-
-    console.log(data);
-
-    expect(consoleSpy).toHaveBeenCalledWith(data);
     expect(consoleSpy).toHaveBeenCalledTimes(1);
+    expect(path.isAbsolute(getAbsolutePath(filePath))).toBe(true);
+    expect(consoleSpy.mock.calls[0][0]).toBe(getAbsolutePath(filePath));
 
     consoleSpy.mockRestore();
   });
