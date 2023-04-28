@@ -1,5 +1,5 @@
 const fs = require("fs");
-const app = require("./src/index");
+const { Solution } = require("./src/index");
 
 const consoleSpy = jest.spyOn(console, "log");
 const writeFileSyncSpy = jest.spyOn(fs, "writeFileSync");
@@ -11,7 +11,7 @@ const filePath = "notes.txt";
 
 describe("File Operations", () => {
   it("should create, read, update and delete a file and log the required content in the console", () => {
-    app();
+    Solution();
     const content = "The world has enough coders ";
     const updateString = "BE A CODING NINJA!";
     const updatedContent = `The world has enough coders ${updateString}`;

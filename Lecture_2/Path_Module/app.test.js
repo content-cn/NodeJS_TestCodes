@@ -1,11 +1,11 @@
 const path = require("path");
-const app = require("./src/index");
+const { Solution } = require("./src/index");
 const { getAbsolutePath } = require("./src/module");
 const consoleSpy = jest.spyOn(console, "log");
 
 describe("Required data is logged in the console", () => {
   it("should log the correct message in the console", () => {
-    app();
+    Solution();
     const filePath = path.join("src", "file.txt");
 
     expect(consoleSpy).toHaveBeenCalledTimes(1);

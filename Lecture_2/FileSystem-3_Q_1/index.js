@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-module.exports = function () {
+exports.Solution = () => {
   fs.writeFile("note.txt", "The world has enough coders", (err) => {
     if (err) console.log(err);
     else {

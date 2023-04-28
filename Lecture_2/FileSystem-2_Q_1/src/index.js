@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-module.exports = function () {
+exports.Solution = () => {
   // Create a new file and write to it
   fs.writeFileSync("notes.txt", "The world has enough coders ");
 

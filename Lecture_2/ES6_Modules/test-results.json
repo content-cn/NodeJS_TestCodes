@@ -1,0 +1,21 @@
+{
+  "runtime": 955,
+  "percentageScore": 100,
+  "count": {
+    "total": 1,
+    "passed": 1
+  },
+  "failedTestCases": [],
+  "suites": [
+    {
+      "suiteName": "Files have .mjs extension and data is logged as expected",
+      "passed": true,
+      "testCases": [
+        {
+          "passed": true,
+          "description": "The files should have .mjs extension"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,6 @@
-// app.js - our main application file
 const math = require("./math.js");
 
-module.exports = function () {
+exports.Solution = () => {
   const nums = [1, 2, 3, 4, 5];
 
   console.log(`The sum is ${math.sum(nums)}`);

@@ -1,0 +1,21 @@
+{
+  "runtime": 1034,
+  "percentageScore": 100,
+  "count": {
+    "total": 1,
+    "passed": 1
+  },
+  "failedTestCases": [],
+  "suites": [
+    {
+      "suiteName": "test app.js",
+      "passed": true,
+      "testCases": [
+        {
+          "passed": true,
+          "description": "it should write data to file, read, update and read again"
+        }
+      ]
+    }
+  ]
+}

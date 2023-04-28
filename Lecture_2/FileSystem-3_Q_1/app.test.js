@@ -1,33 +1,5 @@
-// const fs = require("fs");
-// const app = require("./index");
-
-// const writeFileSpy = jest.spyOn(fs, "writeFile");
-// const readFileSpy = jest.spyOn(fs, "readFile");
-// const appendFileSpy = jest.spyOn(fs, "appendFile");
-
-// const filePath = "note.txt";
-
-// describe("File Operations", () => {
-//   it("should create, read, update and delete a file and log the required content in the console", () => {
-//     app();
-
-//     expect(writeFileSpy).toHaveBeenCalled();
-//     expect(writeFileSpy.mock.calls[0][0]).toMatch(filePath);
-//     expect(writeFileSpy.mock.calls[0][1]).toMatch(content);
-
-//     expect(readFileSpy).toHaveBeenCalled();
-//     expect(readFileSpy.mock.calls[0][0]).toMatch(filePath);
-//     expect(readFileSpy.mock.calls[0][1]).toMatch(/utf/i);
-
-//     expect(appendFileSpy).toHaveBeenCalled();
-//     expect(appendFileSpy.mock.calls[0][0]).toMatch(filePath);
-//     expect(appendFileSpy.mock.calls[0][1]).toMatch(updateString);
-
-//   });
-// });
-
 const fs = require("fs");
-const app = require("./index");
+const { Solution } = require("./index");
 
 jest.mock("fs");
 
@@ -50,7 +22,7 @@ const consoleSpy = jest.spyOn(console, "log");
 
 describe("test app.js", () => {
   test("it should write data to file, read, update and read again", () => {
-    app();
+    Solution();
 
     expect(fs.writeFile).toHaveBeenCalledWith(
       "note.txt",
