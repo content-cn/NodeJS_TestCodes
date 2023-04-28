@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-exports.Solution = () => {
+const Solution = () => {
   fs.writeFile("note.txt", "The world has enough coders", (err) => {
     if (err) console.log(err);
     else {
@@ -23,7 +23,8 @@ exports.Solution = () => {
     }
   });
 };
-
+Solution();
+module.exports = Solution;
 // The reason for this issue is the asynchronous nature of Node.js. Since the developer is using non-blocking code, the application does not wait for the file operation to complete before moving on to the next task. This could lead to a race condition where the application tries to read the file before the update operation is completed.
 
 // To resolve this issue, the developer could use callbacks or promises to ensure that the read operation is only performed after the update operation is completed.

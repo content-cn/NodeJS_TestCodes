@@ -1,5 +1,5 @@
 const path = require("path");
-const { Solution } = require("./src/index");
+const Solution = require("./src/index");
 const { getAbsolutePath } = require("./src/module");
 const consoleSpy = jest.spyOn(console, "log");
 

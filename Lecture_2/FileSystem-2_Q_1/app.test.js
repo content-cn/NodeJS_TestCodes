@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Solution } = require("./src/index");
+const Solution = require("./src/index");
 
 const consoleSpy = jest.spyOn(console, "log");
 const writeFileSyncSpy = jest.spyOn(fs, "writeFileSync");

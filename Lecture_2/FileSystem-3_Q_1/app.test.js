@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Solution } = require("./index");
+const Solution = require("./index");
 
 jest.mock("fs");
 

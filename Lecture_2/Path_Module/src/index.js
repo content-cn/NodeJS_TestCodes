@@ -2,10 +2,12 @@ const fs = require("fs");
 const path = require("path");
 const { getAbsolutePath } = require("./module");
 
-exports.Solution = () => {
+const Solution = () => {
   const path_to_file = path.join("src", "file.txt");
   console.log(getAbsolutePath(path_to_file));
 };
+Solution();
+module.exports = Solution;
 
 // Here's an explanation of how the code snippet works:
 

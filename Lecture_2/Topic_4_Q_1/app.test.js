@@ -1,7 +1,5 @@
-const { Solution } = require("./index");
+const Solution = require("./index");
 const axios = require("axios");
-
-jest.mock("axios");
 
 const apiUrl = "https://api.codingninjas.com/api/v3/event_tags";
 const responseData = {

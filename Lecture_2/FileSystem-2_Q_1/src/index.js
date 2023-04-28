@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-exports.Solution = () => {
+const Solution = () => {
   // Create a new file and write to it
   fs.writeFileSync("notes.txt", "The world has enough coders ");
 
@@ -20,3 +20,5 @@ exports.Solution = () => {
 
   //  Note: This code uses blocking methods for simplicity and learning purposes. In real-world applications, it's recommended to use non-blocking methods for better performance.
 };
+Solution();
+module.exports = Solution;

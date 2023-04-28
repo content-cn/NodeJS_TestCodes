@@ -1,4 +1,4 @@
-const { Solution } = require("./app");
+const Solution = require("./app");
 const consoleSpy = jest.spyOn(console, "log");
 
 describe("Required data is logged in the console", () => {
