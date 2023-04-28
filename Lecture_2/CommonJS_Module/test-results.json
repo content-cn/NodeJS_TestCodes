@@ -1,5 +1,5 @@
 {
-  "runtime": 555,
+  "runtime": 760,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -11,6 +11,10 @@
       "suiteName": "Required data is logged in the console",
       "passed": true,
       "testCases": [
+        {
+          "passed": true,
+          "description": "exports an object with sum and mean functions"
+        },
         {
           "passed": true,
           "description": "should log the correct sum and mean in the console"
