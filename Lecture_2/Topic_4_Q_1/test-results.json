@@ -1,0 +1,21 @@
+{
+  "runtime": 1154,
+  "percentageScore": 100,
+  "count": {
+    "total": 1,
+    "passed": 1
+  },
+  "failedTestCases": [],
+  "suites": [
+    {
+      "suiteName": "Axios get request",
+      "passed": true,
+      "testCases": [
+        {
+          "passed": true,
+          "description": "should log the correct data in the console"
+        }
+      ]
+    }
+  ]
+}

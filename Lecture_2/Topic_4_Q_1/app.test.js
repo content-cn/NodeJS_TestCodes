@@ -1,4 +1,4 @@
-const app = require("./index");
+const { Solution } = require("./index");
 const axios = require("axios");
 
 jest.mock("axios");
@@ -46,7 +46,7 @@ describe("Axios get request", () => {
   it("should log the correct data in the console", async () => {
     axiosGetSpy.mockResolvedValue(responseData);
 
-    await app();
+    await Solution();
 
     expect(axiosGetSpy).toHaveBeenCalledTimes(1);
     expect(axiosGetSpy).toHaveBeenCalledWith(apiUrl);
