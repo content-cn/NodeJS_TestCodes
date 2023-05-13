@@ -1,0 +1,23 @@
+{
+  "runtime": 1200,
+  "percentageScore": 0,
+  "count": {
+    "total": 1,
+    "passed": 0
+  },
+  "failedTestCases": [
+    "should handle POST requests, append the request body data to a file and send email to the user"
+  ],
+  "suites": [
+    {
+      "suiteName": "Tests",
+      "passed": false,
+      "testCases": [
+        {
+          "passed": false,
+          "description": "should handle POST requests, append the request body data to a file and send email to the user"
+        }
+      ]
+    }
+  ]
+}
